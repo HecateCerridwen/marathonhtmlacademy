@@ -5,32 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Марафон 2021</title>
-    <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="/css/normalize.min.css">
   </head>
   <body>
     <header class="header">
       <div class="header__container">
         <nav class="header__menu">
           <ul class="header__list"> 
-            <li class="header__item"> 
-              <a class="header__link" href="#">Каталог</a>
-            </li>
-            <li class="header__item"> 
-              <a class="header__link" href="#">Доставка и оплата</a>
-            </li>
-            <li class="header__item"> 
-              <a class="header__link" href="#">Отзывы</a>
-            </li>
-            <li class="header__item"> 
-              <a class="header__link" href="#">Спецпредложения</a>
-            </li>
-            <li class="header__item"> 
-              <a class="header__link" href="#">Контакты</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Корзина</a>
-            </li>
+            <li class="header__item"> <a class="header__link" href="#">Каталог</a></li>
+            <li class="header__item"> <a class="header__link" href="#">Доставка и оплата</a></li>
+            <li class="header__item"> <a class="header__link" href="#">Отзывы</a></li>
+            <li class="header__item"> <a class="header__link" href="#">Спецпредложения</a></li>
+            <li class="header__item"> <a class="header__link" href="#">Контакты</a></li>
+            <li class="header__item"> <a class="header__link" href="#">Корзина</a></li>
           </ul>
         </nav>
         <a class="header__linklogo" href="#">
@@ -45,23 +33,30 @@
           <p class="topcatalog__desc">Оригинальные свежие букеты с доставкой по всему городу</p>
           <a class="topcatalog__btn" href="#">Смотреть каталог</a>
           <picture>
-            <source srcset="./img/topimg1.jpg 1x, ./img/topimg1x2.jpg 2x">
-            <img class="topcatalog__img topcatalog__img--img1" src="./img/topimg1.jpg" alt="Букет розовых тюльпанов" width="386" height="404">
+            <source srcset="./img/topimg1.jpg 1x, ./img/topimg1x2.jpg 2x"><img class="topcatalog__img topcatalog__img--img1" src="./img/topimg1.jpg" alt="Букет розовых тюльпанов" width="386" height="404">
           </picture>
           <picture>
-            <source srcset="./img/topimg2.jpg 1x, ./img/topimg2x2.jpg 2x">
-            <img class="topcatalog__img topcatalog__img--img2" src="./img/topimg2.jpg" alt="Букет из разных сортов роз" width="387" height="420">
+            <source srcset="./img/topimg2.jpg 1x, ./img/topimg2x2.jpg 2x"><img class="topcatalog__img topcatalog__img--img2" src="./img/topimg2.jpg" alt="Букет из разных сортов роз" width="387" height="420">
           </picture>
           <ul class="topcatalog__list">
             <li class="topcatalog__item">
+              <svg width="82" height="52" viewbox="0 0 82 52">
+                <use xlink:href="sprite.svg#car"></use>
+              </svg>
               <h3 class="topcatalog__titleitem">Быстрая доставка</h3>
               <p class="topcatalog__descitem">Можем собрать букет и передать его в доставку всего за час.</p>
             </li>
             <li class="topcatalog__item">
+              <svg width="52" height="52" viewbox="0 0 52 52">
+                <use xlink:href="sprite.svg#bouquet"></use>
+              </svg>
               <h3 class="topcatalog__titleitem">Всегда свежие цветы</h3>
               <p class="topcatalog__descitem">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
             </li>
             <li class="topcatalog__item">
+              <svg width="58" height="52" viewbox="0 0 58 52">
+                <use xlink:href="sprite.svg#photo"></use>
+              </svg>
               <h3 class="topcatalog__titleitem">Отправляем фото цветов</h3>
               <p class="topcatalog__descitem">Перед доставкой сделаем фотографию букета и отправим вам.</p>
             </li>
@@ -83,8 +78,16 @@
             </picture>
           </div>
           <div class="popbouquets__btncontainer"> 
-            <button class="popbouquets__btnswiper popbouquets__btnswiper--left"></button>
-            <button class="popbouquets__btnswiper popbouquets__btnswiper--right"></button>
+            <button class="popbouquets__btnswiper popbouquets__btnswiper--left" type="button">
+              <svg width="50" height="16" viewbox="0 0 50 16">
+                <use xlink:href="sprite.svg#left"></use>
+              </svg>
+            </button>
+            <button class="popbouquets__btnswiper popbouquets__btnswiper--right" type="button">
+              <svg width="50" height="16" viewbox="0 0 50 16">
+                <use xlink:href="sprite.svg#right"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -93,20 +96,20 @@
           <ul class="goods__list"> 
             <li class="goods__item"> 
               <a class="goods__link" href="#">
-                <h3 class="goods__titleitem">Свадебные букеты</h3>
-                <p class="goods__descitem">Букеты для невест</p>
+              <h3 class="goods__titleitem">Свадебные букеты</h3>
+              <p class="goods__descitem">Букеты для невест</p>
               </a>
             </li>
             <li class="goods__item"> 
               <a class="goods__link" href="#">
-                <h3 class="goods__titleitem">Букеты с пионами</h3>
-                <p class="goods__descitem">Букеты с сезонными пионами</p>
+              <h3 class="goods__titleitem">Букеты с пионами</h3>
+              <p class="goods__descitem">Букеты с сезонными пионами</p>
               </a>
             </li>
             <li class="goods__item"> 
               <a class="goods__link" href="#">
-                <h3 class="goods__titleitem">Выбрать букет</h3>
-                <p class="goods__descitem">Букеты в ассортименте</p>
+              <h3 class="goods__titleitem">Выбрать букет</h3>
+              <p class="goods__descitem">Букеты в ассортименте</p>
               </a>
             </li>
           </ul>
@@ -123,18 +126,30 @@
           <h2 class="step__title">4 шага к идеальному букету</h2>
           <ul class="step__list"> 
             <li class="step__item"> 
+              <svg width="66" height="52" viewbox="0 0 66 52">
+                <use xlink:href="sprite.svg#zakaz"></use>
+              </svg>
               <h3 class="step__titleitem">Заказ</h3>
               <p class="step__descitem">Выбирите понравившейся букет из каталога и оформите заказ</p>
             </li>
             <li class="step__item"> 
+              <svg width="38" height="52" viewbox="0 0 38 52">
+                <use xlink:href="sprite.svg#women"></use>
+              </svg>
               <h3 class="step__titleitem">Уточнение деталей</h3>
               <p class="step__descitem">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
             </li>
             <li class="step__item"> 
+              <svg width="70" height="52" viewbox="0 0 70 52">
+                <use xlink:href="sprite.svg#calendar"></use>
+              </svg>
               <h3 class="step__titleitem">Оплата</h3>
               <p class="step__descitem">Оплатить заказ можно онлайн на сайте или при получении</p>
             </li>
             <li class="step__item"> 
+              <svg width="82" height="52" viewbox="0 0 82 52">
+                <use xlink:href="sprite.svg#car"></use>
+              </svg>
               <h3 class="step__titleitem">Доставка</h3>
               <p class="step__descitem">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
             </li>
@@ -147,13 +162,25 @@
           <p class="news__desc">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
           <ul class="news__list"> 
             <li class="news__item"> 
-              <a class="news__link news__link--inst" href="#"></a>
+              <a class="news__link news__link--inst" href="#">
+                <svg width="20" height="20" viewbox="0 0 20 20">
+                  <use xlink:href="sprite.svg#in"></use>
+                </svg>
+              </a>
             </li>
             <li class="news__item"> 
-              <a class="news__link news__link--fb" href="#"></a>
+              <a class="news__link news__link--fb" href="#">
+                <svg width="12" height="20" viewbox="0 0 12 20">
+                  <use xlink:href="sprite.svg#fb"></use>
+                </svg>
+              </a>
             </li>
             <li class="news__item"> 
-              <a class="news__link news__link--tw" href="#"></a>
+              <a class="news__link news__link--tw" href="#">
+                <svg width="26" height="20" viewbox="0 0 26 20">
+                  <use xlink:href="sprite.svg#tw"></use>
+                </svg>
+              </a>
             </li>
           </ul>
           <picture>
@@ -228,38 +255,39 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container">
-        <a class="footer__linklogo" href="#">
-          <img class="footer__logo" src="./img/logowhite.png" alt="Логотип кампании Botanika" width="100" height="32">
-        </a>
+      <div class="footer__container"><a class="footer__linklogo" href="#">
+        <img class="footer__logo" src="./img/logowhite.png" alt="Логотип кампании Botanika" width="100" height="32"></a>
         <nav class="footer__menu">
           <ul class="footer__list"> 
-            <li class="footer__item"> 
-              <a class="footer__link" href="#">Каталог</a>
-            </li>
-            <li class="footer__item"> 
-              <a class="footer__link" href="#">Доставка и оплата</a>
-            </li>
-            <li class="footer__item"> 
-              <a class="footer__link" href="#">Отзывы</a>
-            </li>
-            <li class="footer__item"> 
-              <a class="footer__link" href="#">Спецпредложения</a>
-            </li>
-            <li class="footer__item"> 
-              <a class="footer__link" href="#">Контакты</a>
-            </li>
+            <li class="footer__item"> <a class="footer__link" href="#">Каталог</a></li>
+            <li class="footer__item"> <a class="footer__link" href="#">Доставка и оплата</a></li>
+            <li class="footer__item"> <a class="footer__link" href="#">Отзывы</a></li>
+            <li class="footer__item"> <a class="footer__link" href="#">Спецпредложения</a></li>
+            <li class="footer__item"> <a class="footer__link" href="#">Контакты</a></li>
+            <li class="footer__item"> <a class="footer__link" href="#">Корзина</a></li>
           </ul>
         </nav>
         <ul class="footer__socialist"> 
           <li class="footer__socialitem"> 
-            <a class="footer__socialist footer__socialist--inst" href="#"></a>
+            <a class="footer__socialist footer__socialist--inst" href="#">
+              <svg width="20" height="20" viewbox="0 0 20 20">
+                <use xlink:href="sprite.svg#in"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer__socialitem"> 
-            <a class="footer__socialist footer__socialist--fb" href="#"></a>
+            <a class="footer__socialist footer__socialist--fb" href="#">
+              <svg width="12" height="20" viewbox="0 0 12 20">
+                <use xlink:href="sprite.svg#fb"></use>
+              </svg>
+            </a>
           </li>
           <li class="footer__socialitem"> 
-            <a class="footer__socialist footer__socialist--tw" href="#"></a>
+            <a class="footer__socialist footer__socialist--tw" href="#">
+              <svg width="26" height="20" viewbox="0 0 26 20">
+                <use xlink:href="sprite.svg#tw"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
