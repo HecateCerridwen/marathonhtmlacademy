@@ -5,20 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Марафон 2021</title>
-    <link rel="stylesheet" href="style.min.css">
-    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
+    <header class="header section">
+      <div class="header__container container">
         <nav class="header__menu">
-          <ul class="header__list"> 
-            <li class="header__item"> <a class="header__link" href="#">Каталог</a></li>
-            <li class="header__item"> <a class="header__link" href="#">Доставка и оплата</a></li>
-            <li class="header__item"> <a class="header__link" href="#">Отзывы</a></li>
-            <li class="header__item"> <a class="header__link" href="#">Спецпредложения</a></li>
-            <li class="header__item"> <a class="header__link" href="#">Контакты</a></li>
-            <li class="header__item"> <a class="header__link" href="#">Корзина</a></li>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link item-desc" href="#">Каталог</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link item-desc" href="#">Доставка и оплата</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link item-desc" href="#">Отзывы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link item-desc" href="#">Спецпредложения</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link item-desc" href="#">Контакты</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link item-desc" href="#">Корзина</a>
+            </li>
           </ul>
         </nav>
         <a class="header__linklogo" href="#">
@@ -27,11 +39,11 @@
       </div>
     </header>
     <main>
-      <section class="topcatalog">
-        <div class="topcatalog__container">
-          <h1 class="topcatalog__title">Авторские букеты в Петербурге</h1>
+      <section class="topcatalog section">
+        <div class="topcatalog__container container">
+          <h1 class="topcatalog__title">Авторские букеты <span>в Петербурге</span></h1>
           <p class="topcatalog__desc">Оригинальные свежие букеты с доставкой по всему городу</p>
-          <a class="topcatalog__btn" href="#">Смотреть каталог</a>
+          <a class="topcatalog__btn btn" href="#">Смотреть каталог</a>
           <picture>
             <source srcset="./img/topimg1.jpg 1x, ./img/topimg1x2.jpg 2x"><img class="topcatalog__img topcatalog__img--img1" src="./img/topimg1.jpg" alt="Букет розовых тюльпанов" width="386" height="404">
           </picture>
@@ -43,41 +55,41 @@
               <svg width="82" height="52" viewbox="0 0 82 52">
                 <use xlink:href="sprite.svg#car"></use>
               </svg>
-              <h3 class="topcatalog__titleitem">Быстрая доставка</h3>
-              <p class="topcatalog__descitem">Можем собрать букет и передать его в доставку всего за час.</p>
+              <h3 class="topcatalog__titleitem item-title">Быстрая доставка</h3>
+              <p class="topcatalog__descitem item-desc">Можем собрать букет и передать его в доставку всего за час.</p>
             </li>
             <li class="topcatalog__item">
               <svg width="52" height="52" viewbox="0 0 52 52">
                 <use xlink:href="sprite.svg#bouquet"></use>
               </svg>
-              <h3 class="topcatalog__titleitem">Всегда свежие цветы</h3>
-              <p class="topcatalog__descitem">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
+              <h3 class="topcatalog__titleitem item-title">Всегда свежие цветы</h3>
+              <p class="topcatalog__descitem item-desc">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
             </li>
             <li class="topcatalog__item">
               <svg width="58" height="52" viewbox="0 0 58 52">
                 <use xlink:href="sprite.svg#photo"></use>
               </svg>
-              <h3 class="topcatalog__titleitem">Отправляем фото цветов</h3>
-              <p class="topcatalog__descitem">Перед доставкой сделаем фотографию букета и отправим вам.</p>
+              <h3 class="topcatalog__titleitem item-title">Отправляем фото цветов</h3>
+              <p class="topcatalog__descitem item-desc">Перед доставкой сделаем фотографию букета и отправим вам.</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="popbouquets">
-        <div class="popbouquets__container">
-          <h2 class="popbouquets__title">Популярные букеты</h2>
-          <div class="popbouquets__card"> 
-            <h3 class="popbouquets__titlecard">Букет «Нежность»</h3>
-            <p class="popbouquets__desccard">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-            <p class="popbouquets__sizecard">30 × 40 см</p>
-            <p class="popbouquets__pricecard">3600 руб.</p>
-            <a class="popbouquets__btncard" href="#">Заказать</a>
+      <section class="popbouquets section">
+        <div class="popbouquets__container container">
+          <h2 class="popbouquets__title title">Популярные букеты</h2>
+          <div class="popbouquets__card">
+            <h3 class="popbouquets__titlecard item-title">Букет «Нежность»</h3>
+            <p class="popbouquets__desccard item-desc">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+            <p class="popbouquets__sizecard item-desc">30 × 40 см</p>
+            <p class="popbouquets__pricecard item-title">3600 руб.</p>
+            <a class="popbouquets__btncard btn" href="#">Заказать</a>
             <picture>
               <source srcset="./img/price.png 1x, ./img/pricex2.png 2x">
               <img class="popbouquets__img popbouquets__img--img2" src="./img/price.png" alt="Букет Нежность из белых роз" width="387" height="438">
             </picture>
           </div>
-          <div class="popbouquets__btncontainer"> 
+          <div class="popbouquets__btncontainer">
             <button class="popbouquets__btnswiper popbouquets__btnswiper--left" type="button">
               <svg width="50" height="16" viewbox="0 0 50 16">
                 <use xlink:href="sprite.svg#left"></use>
@@ -91,91 +103,91 @@
           </div>
         </div>
       </section>
-      <section class="goods">
-        <div class="goods__container">
-          <ul class="goods__list"> 
-            <li class="goods__item"> 
+      <section class="goods section">
+        <div class="goods__container container">
+          <ul class="goods__list">
+            <li class="goods__item">
               <a class="goods__link" href="#">
-              <h3 class="goods__titleitem">Свадебные букеты</h3>
-              <p class="goods__descitem">Букеты для невест</p>
+              <h3 class="goods__titleitem title">Свадебные букеты</h3>
+              <p class="goods__descitem item-desc">Букеты для невест</p>
               </a>
             </li>
-            <li class="goods__item"> 
+            <li class="goods__item">
               <a class="goods__link" href="#">
-              <h3 class="goods__titleitem">Букеты с пионами</h3>
-              <p class="goods__descitem">Букеты с сезонными пионами</p>
+              <h3 class="goods__titleitem title">Букеты с пионами</h3>
+              <p class="goods__descitem item-desc">Букеты с сезонными пионами</p>
               </a>
             </li>
-            <li class="goods__item"> 
+            <li class="goods__item">
               <a class="goods__link" href="#">
-              <h3 class="goods__titleitem">Выбрать букет</h3>
-              <p class="goods__descitem">Букеты в ассортименте</p>
+              <h3 class="goods__titleitem title">Выбрать букет</h3>
+              <p class="goods__descitem item-desc">Букеты в ассортименте</p>
               </a>
             </li>
           </ul>
         </div>
       </section>
-      <section class="banner">
-        <div class="banner__container">
-          <h3 class="banner__title">Скидка 10% на первый заказ</h3>
+      <section class="banner section">
+        <div class="banner__container container">
+          <h3 class="banner__title">Скидка 10% на&nbsp;первый заказ</h3>
           <p class="banner__desc">Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
         </div>
       </section>
-      <section class="step">
-        <div class="step__container">
-          <h2 class="step__title">4 шага к идеальному букету</h2>
-          <ul class="step__list"> 
-            <li class="step__item"> 
+      <section class="step section">
+        <div class="step__container container">
+          <h2 class="step__title title">4 шага к идеальному букету</h2>
+          <ul class="step__list">
+            <li class="step__item">
               <svg width="66" height="52" viewbox="0 0 66 52">
                 <use xlink:href="sprite.svg#zakaz"></use>
               </svg>
-              <h3 class="step__titleitem">Заказ</h3>
-              <p class="step__descitem">Выбирите понравившейся букет из каталога и оформите заказ</p>
+              <h3 class="step__titleitem item-title">Заказ</h3>
+              <p class="step__descitem item-desc">Выбирите понравившейся букет из каталога и оформите заказ</p>
             </li>
-            <li class="step__item"> 
+            <li class="step__item">
               <svg width="38" height="52" viewbox="0 0 38 52">
                 <use xlink:href="sprite.svg#women"></use>
               </svg>
-              <h3 class="step__titleitem">Уточнение деталей</h3>
-              <p class="step__descitem">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
+              <h3 class="step__titleitem item-title">Уточнение деталей</h3>
+              <p class="step__descitem item-desc">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
             </li>
-            <li class="step__item"> 
+            <li class="step__item">
               <svg width="70" height="52" viewbox="0 0 70 52">
                 <use xlink:href="sprite.svg#calendar"></use>
               </svg>
-              <h3 class="step__titleitem">Оплата</h3>
-              <p class="step__descitem">Оплатить заказ можно онлайн на сайте или при получении</p>
+              <h3 class="step__titleitem item-title">Оплата</h3>
+              <p class="step__descitem item-desc">Оплатить заказ можно онлайн на сайте или при получении</p>
             </li>
-            <li class="step__item"> 
+            <li class="step__item">
               <svg width="82" height="52" viewbox="0 0 82 52">
                 <use xlink:href="sprite.svg#car"></use>
               </svg>
-              <h3 class="step__titleitem">Доставка</h3>
-              <p class="step__descitem">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
+              <h3 class="step__titleitem item-title">Доставка</h3>
+              <p class="step__descitem item-desc">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="news">
-        <div class="news__container">
-          <h2 class="news__title">Следите за нашими новостями</h2>
+      <section class="news section">
+        <div class="news__container container">
+          <h2 class="news__title title">Следите за нашими новостями</h2>
           <p class="news__desc">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
-          <ul class="news__list"> 
-            <li class="news__item"> 
+          <ul class="news__list">
+            <li class="news__item">
               <a class="news__link news__link--inst" href="#">
                 <svg width="20" height="20" viewbox="0 0 20 20">
                   <use xlink:href="sprite.svg#in"></use>
                 </svg>
               </a>
             </li>
-            <li class="news__item"> 
+            <li class="news__item">
               <a class="news__link news__link--fb" href="#">
                 <svg width="12" height="20" viewbox="0 0 12 20">
                   <use xlink:href="sprite.svg#fb"></use>
                 </svg>
               </a>
             </li>
-            <li class="news__item"> 
+            <li class="news__item">
               <a class="news__link news__link--tw" href="#">
                 <svg width="26" height="20" viewbox="0 0 26 20">
                   <use xlink:href="sprite.svg#tw"></use>
@@ -197,57 +209,57 @@
           </picture>
         </div>
       </section>
-      <section class="reviews">
-        <div class="reviews__container">
-          <h2 class="reviews__title">Отзывы</h2>
+      <section class="reviews section">
+        <div class="reviews__container container">
+          <h2 class="reviews__title title">Отзывы</h2>
           <ul class="reviews__list">
-            <li class="reviews__item"> 
+            <li class="reviews__item">
               <figure>
                 <blockquote>
-                  <p class="reviews__descitem">Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
+                  <p class="reviews__descitem item-desc">Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
                 </blockquote>
-                <figcaption class="reviews__signatitem">Марина</figcaption>
+                <figcaption class="reviews__signatitem item-title">Марина</figcaption>
               </figure>
             </li>
-            <li class="reviews__item"> 
+            <li class="reviews__item">
               <figure>
                 <blockquote>
-                  <p class="reviews__descitem">Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
+                  <p class="reviews__descitem item-desc">Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
                 </blockquote>
-                <figcaption class="reviews__signatitem">Татьяна</figcaption>
+                <figcaption class="reviews__signatitem item-title">Татьяна</figcaption>
               </figure>
             </li>
-            <li class="reviews__item"> 
+            <li class="reviews__item">
               <figure>
                 <blockquote>
-                  <p class="reviews__descitem">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
+                  <p class="reviews__descitem item-desc">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
                 </blockquote>
-                <figcaption class="reviews__signatitem">Ольга</figcaption>
+                <figcaption class="reviews__signatitem item-title">Ольга</figcaption>
               </figure>
             </li>
           </ul>
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__container">
-          <div class="contacts__cotent"> 
-            <h2 class="contacts__title">Мы ждем вас</h2>
-            <ul class="contacts__list"> 
-              <li class="contacts__item"> 
-                <p class="contacts__desc">Приходите к нам:</p>
-                <a class="contacts__link" href="#">Санкт-Петербург, ул. Большая Конюшенная, 19</a>
+        <div class="contacts__container container">
+          <div class="contacts__cotent">
+            <h2 class="contacts__title title">Мы ждем вас</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <p class="contacts__desc item-desc">Приходите к нам:</p>
+                <a class="contacts__link item-title" href="#">Санкт-Петербург, ул. Большая Конюшенная, 19</a>
               </li>
-              <li class="contacts__item"> 
-                <p class="contacts__desc">Режим работы:</p>
-                <p class="contacts__descsched">Пн-Вск, с 9-00 до 20-00</p>
+              <li class="contacts__item">
+                <p class="contacts__desc item-desc">Режим работы:</p>
+                <p class="contacts__descsched item-title">Пн-Вск, с 9-00 до 20-00</p>
               </li>
-              <li class="contacts__item"> 
-                <p class="contacts__desc">Позвоните нам:</p>
-                <a class="contacts__link" href="tel:+78129834719">+ 7 (812) 983-47-19</a>
+              <li class="contacts__item">
+                <p class="contacts__desc item-desc">Позвоните нам:</p>
+                <a class="contacts__link item-title" href="tel:+78129834719">+ 7 (812) 983-47-19</a>
               </li>
-              <li class="contacts__item"> 
-                <p class="contacts__desc">Напишите нам:</p>
-                <a class="contacts__link" href="mailto:info@botanika.ru">info@botanika.ru</a>
+              <li class="contacts__item">
+                <p class="contacts__desc item-desc">Напишите нам:</p>
+                <a class="contacts__link item-title" href="mailto:info@botanika.ru">info@botanika.ru</a>
               </li>
             </ul>
           </div>
@@ -255,37 +267,51 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container"><a class="footer__linklogo" href="#">
-        <img class="footer__logo" src="./img/logowhite.png" alt="Логотип кампании Botanika" width="100" height="32"></a>
+      <div class="footer__container container">
+        <a class="footer__linklogo" href="#">
+        <img class="footer__logo" src="./img/logowhite.png" alt="Логотип кампании Botanika" width="100" height="32">
+      </a>
         <nav class="footer__menu">
-          <ul class="footer__list"> 
-            <li class="footer__item"> <a class="footer__link" href="#">Каталог</a></li>
-            <li class="footer__item"> <a class="footer__link" href="#">Доставка и оплата</a></li>
-            <li class="footer__item"> <a class="footer__link" href="#">Отзывы</a></li>
-            <li class="footer__item"> <a class="footer__link" href="#">Спецпредложения</a></li>
-            <li class="footer__item"> <a class="footer__link" href="#">Контакты</a></li>
-            <li class="footer__item"> <a class="footer__link" href="#">Корзина</a></li>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link item-desc" href="#">Каталог</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link item-desc" href="#">Доставка и оплата</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link item-desc" href="#">Отзывы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link item-desc" href="#">Спецпредложения</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link item-desc" href="#">Контакты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link item-desc" href="#">Корзина</a>
+            </li>
           </ul>
         </nav>
-        <ul class="footer__socialist"> 
-          <li class="footer__socialitem"> 
+        <ul class="footer__socialist">
+          <li class="footer__socialitem">
             <a class="footer__socialist footer__socialist--inst" href="#">
               <svg width="20" height="20" viewbox="0 0 20 20">
-                <use xlink:href="sprite.svg#in"></use>
+                <use xlink:href="sprite.svg#in_white"></use>
               </svg>
             </a>
           </li>
-          <li class="footer__socialitem"> 
+          <li class="footer__socialitem">
             <a class="footer__socialist footer__socialist--fb" href="#">
               <svg width="12" height="20" viewbox="0 0 12 20">
-                <use xlink:href="sprite.svg#fb"></use>
+                <use xlink:href="sprite.svg#fb_white"></use>
               </svg>
             </a>
           </li>
-          <li class="footer__socialitem"> 
+          <li class="footer__socialitem">
             <a class="footer__socialist footer__socialist--tw" href="#">
               <svg width="26" height="20" viewbox="0 0 26 20">
-                <use xlink:href="sprite.svg#tw"></use>
+                <use xlink:href="sprite.svg#tw_white"></use>
               </svg>
             </a>
           </li>
