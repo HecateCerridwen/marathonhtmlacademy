@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Марафон 2021</title>
+    <link rel="preload" href="./fonts/MontserratRegular.woff2" as="font">
     <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -41,38 +42,42 @@
     <main>
       <section class="topcatalog section">
         <div class="topcatalog__container container">
-          <h1 class="topcatalog__title">Авторские букеты <span>в Петербурге</span></h1>
-          <p class="topcatalog__desc">Оригинальные свежие букеты с доставкой по всему городу</p>
-          <a class="topcatalog__btn btn" href="#">Смотреть каталог</a>
-          <picture>
-            <source srcset="./img/topimg1.jpg 1x, ./img/topimg1x2.jpg 2x"><img class="topcatalog__img topcatalog__img--img1" src="./img/topimg1.jpg" alt="Букет розовых тюльпанов" width="386" height="404">
-          </picture>
-          <picture>
-            <source srcset="./img/topimg2.jpg 1x, ./img/topimg2x2.jpg 2x"><img class="topcatalog__img topcatalog__img--img2" src="./img/topimg2.jpg" alt="Букет из разных сортов роз" width="387" height="420">
-          </picture>
-          <ul class="topcatalog__list">
-            <li class="topcatalog__item">
-              <svg width="82" height="52" viewbox="0 0 82 52">
-                <use xlink:href="sprite.svg#car"></use>
-              </svg>
-              <h3 class="topcatalog__titleitem item-title">Быстрая доставка</h3>
-              <p class="topcatalog__descitem item-desc">Можем собрать букет и передать его в доставку всего за час.</p>
-            </li>
-            <li class="topcatalog__item">
-              <svg width="52" height="52" viewbox="0 0 52 52">
-                <use xlink:href="sprite.svg#bouquet"></use>
-              </svg>
-              <h3 class="topcatalog__titleitem item-title">Всегда свежие цветы</h3>
-              <p class="topcatalog__descitem item-desc">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
-            </li>
-            <li class="topcatalog__item">
-              <svg width="58" height="52" viewbox="0 0 58 52">
-                <use xlink:href="sprite.svg#photo"></use>
-              </svg>
-              <h3 class="topcatalog__titleitem item-title">Отправляем фото цветов</h3>
-              <p class="topcatalog__descitem item-desc">Перед доставкой сделаем фотографию букета и отправим вам.</p>
-            </li>
-          </ul>
+          <div class="topcatalog__banner">
+            <h1 class="topcatalog__title">Авторские букеты <span>в&nbsp;Петербурге</span></h1>
+            <p class="topcatalog__desc">Оригинальные свежие букеты с доставкой по всему городу</p>
+            <a class="topcatalog__btn btn" href="#">Смотреть каталог</a>
+            <picture class="topcatalog__img topcatalog__img--pion">
+              <source srcset="./img/topimg1.jpg 1x, ./img/topimg1x2.jpg 2x">
+              <img  src="./img/topimg1.jpg" alt="Букет розовых тюльпанов" >
+            </picture>
+            <picture class="topcatalog__img topcatalog__img--rose">
+              <source srcset="./img/topimg2.jpg 1x, ./img/topimg2x2.jpg 2x">
+              <img src="./img/topimg2.jpg" alt="Букет из разных сортов роз">
+            </picture>
+          </div>
+            <ul class="topcatalog__list">
+              <li class="topcatalog__item">
+                <svg class="topcatalog__icon" width="82" height="52" viewbox="0 0 82 52">
+                  <use xlink:href="sprite.svg#car"></use>
+                </svg>
+                <h3 class="topcatalog__titleitem item-title">Быстрая доставка</h3>
+                <p class="topcatalog__descitem item-desc">Можем собрать букет и передать его в доставку всего за час.</p>
+              </li>
+              <li class="topcatalog__item">
+                <svg class="topcatalog__icon" width="52" height="52" viewbox="0 0 52 52">
+                  <use xlink:href="sprite.svg#bouquet"></use>
+                </svg>
+                <h3 class="topcatalog__titleitem item-title">Всегда свежие цветы</h3>
+                <p class="topcatalog__descitem item-desc">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
+              </li>
+              <li class="topcatalog__item">
+                <svg class="topcatalog__icon" width="58" height="52" viewbox="0 0 58 52">
+                  <use xlink:href="sprite.svg#photo"></use>
+                </svg>
+                <h3 class="topcatalog__titleitem item-title">Отправляем фото цветов</h3>
+                <p class="topcatalog__descitem item-desc">Перед доставкой сделаем фотографию букета и отправим вам.</p>
+              </li>
+            </ul>
         </div>
       </section>
       <section class="popbouquets section">
@@ -84,9 +89,9 @@
             <p class="popbouquets__sizecard item-desc">30 × 40 см</p>
             <p class="popbouquets__pricecard item-title">3600 руб.</p>
             <a class="popbouquets__btncard btn" href="#">Заказать</a>
-            <picture>
+            <picture class="popbouquets__img">
               <source srcset="./img/price.png 1x, ./img/pricex2.png 2x">
-              <img class="popbouquets__img popbouquets__img--img2" src="./img/price.png" alt="Букет Нежность из белых роз" width="387" height="438">
+              <img src="./img/price.png" alt="Букет Нежность из белых роз" width="387" height="438">
             </picture>
           </div>
           <div class="popbouquets__btncontainer">
@@ -128,7 +133,7 @@
         </div>
       </section>
       <section class="banner section">
-        <div class="banner__container container">
+        <div class="container banner__container">
           <h3 class="banner__title">Скидка 10% на&nbsp;первый заказ</h3>
           <p class="banner__desc">Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
         </div>
@@ -156,7 +161,7 @@
                 <use xlink:href="sprite.svg#calendar"></use>
               </svg>
               <h3 class="step__titleitem item-title">Оплата</h3>
-              <p class="step__descitem item-desc">Оплатить заказ можно онлайн на сайте или при получении</p>
+              <p class="step__descitem item-desc">Оплатить заказ можно онлайн на&nbsp;сайте или при получении</p>
             </li>
             <li class="step__item">
               <svg width="82" height="52" viewbox="0 0 82 52">
@@ -170,43 +175,47 @@
       </section>
       <section class="news section">
         <div class="news__container container">
-          <h2 class="news__title title">Следите за нашими новостями</h2>
-          <p class="news__desc">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
-          <ul class="news__list">
-            <li class="news__item">
-              <a class="news__link news__link--inst" href="#">
-                <svg width="20" height="20" viewbox="0 0 20 20">
-                  <use xlink:href="sprite.svg#in"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="news__item">
-              <a class="news__link news__link--fb" href="#">
-                <svg width="12" height="20" viewbox="0 0 12 20">
-                  <use xlink:href="sprite.svg#fb"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="news__item">
-              <a class="news__link news__link--tw" href="#">
-                <svg width="26" height="20" viewbox="0 0 26 20">
-                  <use xlink:href="sprite.svg#tw"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <picture>
-            <source srcset="./img/newsimg1.jpg 1x, ./img/newsimg1x2.jpg 2x">
-            <img class="news__img news__img--img1" src="./img/newsimg1.jpg" alt="" aria-hidden="true" width="285" height="220">
-          </picture>
-          <picture>
-            <source srcset="./img/newsimg2.jpg 1x, ./img/newsimg2x2.jpg 2x">
-            <img class="news__img news__img--img2" src="./img/newsimg2.jpg" alt="" aria-hidden="true" width="285" height="220">
-          </picture>
-          <picture>
-            <source srcset="./img/newsimg3.jpg 1x, ./img/newsimg3x2.jpg 2x">
-            <img class="news__img news__img--img3" src="./img/newsimg3.jpg" alt="" aria-hidden="true" width="387" height="460">
-          </picture>
+          <div class="news__container-left">
+            <h2 class="news__title title">Следите за нашими новостями</h2>
+            <p class="news__desc">Подписывайтесь на наши соцсети и узнавайте о&nbsp;новинках и акциях первым.</p>
+            <ul class="news__list">
+              <li class="news__item">
+                <a class="news__link news__link--inst" href="#">
+                  <svg width="20" height="20" viewbox="0 0 20 20">
+                    <use xlink:href="sprite.svg#in"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="news__item">
+                <a class="news__link news__link--fb" href="#">
+                  <svg width="12" height="20" viewbox="0 0 12 20">
+                    <use xlink:href="sprite.svg#fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="news__item">
+                <a class="news__link news__link--tw" href="#">
+                  <svg width="26" height="20" viewbox="0 0 26 20">
+                    <use xlink:href="sprite.svg#tw"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="news__container-right">
+            <picture>
+              <source srcset="./img/newsimg1.jpg 1x, ./img/newsimg1x2.jpg 2x">
+              <img class="news__img news__img--img1" src="./img/newsimg1.jpg" alt="" aria-hidden="true" width="285" height="220">
+            </picture>
+            <picture>
+              <source srcset="./img/newsimg2.jpg 1x, ./img/newsimg2x2.jpg 2x">
+              <img class="news__img news__img--img2" src="./img/newsimg2.jpg" alt="" aria-hidden="true" width="285" height="220">
+            </picture>
+            <picture>
+              <source srcset="./img/newsimg3.jpg 1x, ./img/newsimg3x2.jpg 2x">
+              <img class="news__img news__img--img3" src="./img/newsimg3.jpg" alt="" aria-hidden="true" width="387" height="460">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="reviews section">
