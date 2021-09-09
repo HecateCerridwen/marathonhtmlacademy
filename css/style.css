@@ -56,6 +56,7 @@
   --desc_white: #FFFFFF;
   --desc: #AE7C78;
   --btn: #D89999;
+  --hover: #573634;
 }
 
 * {
@@ -160,6 +161,15 @@ a {
   margin: 0 62px;
   top: 16px;
   left: 484px;
+  transition-property: border-bottom, color;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.header__link {
+  transition-property: border-bottom, color;
+	transition-duration: .3s;
+	transition-timing-function: ease;
 }
 
 .header__list {
@@ -186,9 +196,8 @@ a {
 /* topcatalog */
 .topcatalog__banner {
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: minmax(118px, auto) minmax(58px, auto) 1fr;
-  grid-auto-rows: minmax(386px, 1fr);
   gap: 24px 20px;
   margin-bottom: 48px;
 }
@@ -235,7 +244,7 @@ a {
 }
 
 .topcatalog__img--rose {
-  grid-column: 3/-1;
+  grid-column: 3/4;
   margin-bottom: auto;
 }
 
@@ -324,6 +333,10 @@ a {
   padding: 0;
   background-color: var(--background);
   border: none;
+  cursor: pointer;
+  transition-property: transform;
+	transition-duration: .3s;
+	transition-timing-function: ease;
 }
 
 .popbouquets__btnswiper--left {
@@ -367,6 +380,9 @@ a {
   height: 100%;
   background: rgba(174, 124, 120, 0.6);
   border-radius: 10px;
+  transition-property: background;
+	transition-duration: .3s;
+	transition-timing-function: ease;
 }
 
 .goods__titleitem {
@@ -489,12 +505,55 @@ a {
 
 .news__container-right {
   display: grid;
-  g
+  grid-template-columns: minmax(200px, 285px) minmax(280px, 387px);
+  gap: 20px;
+}
+
+.news__img {
+  line-height: 0;
+}
+
+.news__img img {
+  width: 100%;
+}
+
+.news__img--img3 {
+  grid-column: 2/-1;
+  grid-row: 1/3;
+}
+
+.news__link {
+  transition-property: transform;
+	transition-duration: .3s;
+	transition-timing-function: ease;
 }
 
 /* reviews */
 .reviews__container {
+  max-width: 1200px;
+  padding: 40px 43px 64px;
   border: 1px solid #AE7C78;
+}
+
+.reviews__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px 106px;
+}
+
+.reviews__item figure,
+.reviews__item blockquote {
+  margin: 0;
+  text-align: center;
+}
+
+.reviews__descitem  {
+  margin-bottom: 16px;
+}
+
+.reviews__title {
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 /* contacts */
@@ -510,11 +569,151 @@ a {
   border-radius: 12px;
 }
 
+.contacts__title {
+  margin-bottom: 42px;
+}
+
+.contacts__item {
+  margin-bottom: 31px;
+}
+
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__desc {
+  margin-bottom: 15px;
+}
+
+.contacts__link {
+  transition-property: color;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
 /* footer */
 .footer {
+  padding: 24px 0 30px;
   background-color: var(--background_footer);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 795px;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+  margin-right: 68px;
+}
+
+.footer__item:last-child {
+  margin-right: 0;
+}
+
+.footer__socialist {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 100px;
+}
+
+.footer__socialitem {
+  margin-right: 19px;
+  margin-bottom: 10px;
+}
+
+.footer__socialitem:last-child {
+  margin-right: 0;
+}
+
+.footer__logo {
+  margin-bottom: 10px;
 }
 
 .footer__link {
   color: var(--desc_white);
+  border-bottom: 1px solid var(--background_footer);
+  transition-property: color, border-bottom;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.footer__socialink {
+  transition-property: transform;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+/* hover, focus, active */
+.btn:hover {
+  background-color: #965e5a;
+}
+
+.btn:focus-visible {
+  outline: none;
+  border: 1px solid var(--hover);
+}
+
+.header__link:hover,
+.footer__link:hover {
+  color: var(--hover);
+  border-bottom: 1px solid var(--hover);
+}
+
+.header__link:focus-visible,
+.header__linklogo:focus-visible {
+  outline: 1px solid rgba(174, 124, 120, 0.6);
+}
+
+.popbouquets__btnswiper:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.popbouquets__btnswiper:focus {
+  outline: 1px solid rgba(174, 124, 120, 0.6);
+}
+
+.goods__link:hover {
+  background: rgba(174, 124, 120, 1);
+}
+
+.goods__link:focus-visible {
+  outline: none;
+  border: 2px solid var(--hover);
+}
+
+.news__link:hover svg,
+.footer__socialink:hover svg{
+  transform: scale(1.3, 1.3);
+}
+
+.news__link:focus-visible,
+.footer__socialink:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--hover);
+}
+
+.contacts__link:hover {
+  color: var(--hover);
+}
+
+.contacts__link:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--hover);
+}
+
+.footer__link:focus-visible,
+.footer__linklogo:focus-visible,
+.footer__linklogo:focus-visible {
+  outline: 2px solid var(--hover);
 }
