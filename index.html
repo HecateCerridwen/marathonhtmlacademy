@@ -7,7 +7,7 @@
     <title>Марафон 2021</title>
     <link rel="preload" href="./fonts/MontserratRegular.woff2" as="font">
     <link rel="stylesheet" href="./css/normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
     <header class="header section">
@@ -34,8 +34,8 @@
             </li>
           </ul>
         </nav>
-        <a class="header__linklogo" href="#">
-          <img class="header__logo" src="./img/logopink.png" alt="Логотип кампании Botanika" width="100" height="32">
+        <a class="header__linklogo" href="#" aria-label="Главная страница сайта кампании Botanika">
+          <img class="header__logo" src="./img/logo.svg" alt="Логотип кампании Botanika" width="100" height="32">
         </a>
       </div>
     </header>
@@ -58,21 +58,21 @@
             <ul class="topcatalog__list">
               <li class="topcatalog__item">
                 <svg class="topcatalog__icon" width="82" height="52" viewbox="0 0 82 52">
-                  <use xlink:href="sprite.svg#car"></use>
+                  <use xlink:href="./img/sprite.svg#car"></use>
                 </svg>
                 <h3 class="topcatalog__titleitem item-title">Быстрая доставка</h3>
                 <p class="topcatalog__descitem item-desc">Можем собрать букет и передать его в доставку всего за час.</p>
               </li>
               <li class="topcatalog__item">
                 <svg class="topcatalog__icon" width="52" height="52" viewbox="0 0 52 52">
-                  <use xlink:href="sprite.svg#bouquet"></use>
+                  <use xlink:href="./img/sprite.svg#bouquet"></use>
                 </svg>
                 <h3 class="topcatalog__titleitem item-title">Всегда свежие цветы</h3>
                 <p class="topcatalog__descitem item-desc">Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
               </li>
               <li class="topcatalog__item">
                 <svg class="topcatalog__icon" width="58" height="52" viewbox="0 0 58 52">
-                  <use xlink:href="sprite.svg#photo"></use>
+                  <use xlink:href="./img/sprite.svg#photo"></use>
                 </svg>
                 <h3 class="topcatalog__titleitem item-title">Отправляем фото цветов</h3>
                 <p class="topcatalog__descitem item-desc">Перед доставкой сделаем фотографию букета и отправим вам.</p>
@@ -95,14 +95,14 @@
             </picture>
           </div>
           <div class="popbouquets__btncontainer">
-            <button class="popbouquets__btnswiper popbouquets__btnswiper--left" type="button">
+            <button class="popbouquets__btnswiper popbouquets__btnswiper--left" type="button" aria-label="Предыдущий товар">
               <svg width="50" height="16" viewbox="0 0 50 16">
-                <use xlink:href="sprite.svg#left"></use>
+                <use xlink:href="./img/sprite.svg#left"></use>
               </svg>
             </button>
-            <button class="popbouquets__btnswiper popbouquets__btnswiper--right" type="button">
+            <button class="popbouquets__btnswiper popbouquets__btnswiper--right" type="button" aria-label="Следующий товар">
               <svg width="50" height="16" viewbox="0 0 50 16">
-                <use xlink:href="sprite.svg#right"></use>
+                <use xlink:href="./img/sprite.svg#right"></use>
               </svg>
             </button>
           </div>
@@ -144,28 +144,28 @@
           <ul class="step__list">
             <li class="step__item">
               <svg width="66" height="52" viewbox="0 0 66 52">
-                <use xlink:href="sprite.svg#zakaz"></use>
+                <use xlink:href="./img/sprite.svg#zakaz"></use>
               </svg>
               <h3 class="step__titleitem item-title">Заказ</h3>
               <p class="step__descitem item-desc">Выбирите понравившейся букет из каталога и оформите заказ</p>
             </li>
             <li class="step__item">
               <svg width="38" height="52" viewbox="0 0 38 52">
-                <use xlink:href="sprite.svg#women"></use>
+                <use xlink:href="./img/sprite.svg#women"></use>
               </svg>
               <h3 class="step__titleitem item-title">Уточнение деталей</h3>
               <p class="step__descitem item-desc">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
             </li>
             <li class="step__item">
               <svg width="70" height="52" viewbox="0 0 70 52">
-                <use xlink:href="sprite.svg#calendar"></use>
+                <use xlink:href="./img/sprite.svg#calendar"></use>
               </svg>
               <h3 class="step__titleitem item-title">Оплата</h3>
               <p class="step__descitem item-desc">Оплатить заказ можно онлайн на&nbsp;сайте или при получении</p>
             </li>
             <li class="step__item">
               <svg width="82" height="52" viewbox="0 0 82 52">
-                <use xlink:href="sprite.svg#car"></use>
+                <use xlink:href="./img/sprite.svg#car"></use>
               </svg>
               <h3 class="step__titleitem item-title">Доставка</h3>
               <p class="step__descitem item-desc">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
@@ -180,23 +180,23 @@
             <p class="news__desc">Подписывайтесь на наши соцсети и узнавайте о&nbsp;новинках и акциях первым.</p>
             <ul class="news__list">
               <li class="news__item">
-                <a class="news__link news__link--inst" href="#">
+                <a class="news__link news__link--inst" href="#" aria-label="Перейти на страницу магазина в instagram">
                   <svg width="20" height="20" viewbox="0 0 20 20">
-                    <use xlink:href="sprite.svg#in"></use>
+                    <use xlink:href="./img/sprite.svg#in"></use>
                   </svg>
                 </a>
               </li>
               <li class="news__item">
-                <a class="news__link news__link--fb" href="#">
+                <a class="news__link news__link--fb" href="#" aria-label="Перейти на страницу магазина в facebook">
                   <svg width="12" height="20" viewbox="0 0 12 20">
-                    <use xlink:href="sprite.svg#fb"></use>
+                    <use xlink:href="./img/sprite.svg#fb"></use>
                   </svg>
                 </a>
               </li>
               <li class="news__item">
-                <a class="news__link news__link--tw" href="#">
+                <a class="news__link news__link--tw" href="#" aria-label="Перейти на страницу магазина в twitter">
                   <svg width="26" height="20" viewbox="0 0 26 20">
-                    <use xlink:href="sprite.svg#tw"></use>
+                    <use xlink:href="./img/sprite.svg#tw"></use>
                   </svg>
                 </a>
               </li>
@@ -278,7 +278,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <a class="footer__linklogo" href="#">
-          <img class="footer__logo" src="./img/logowhite.png" alt="Логотип кампании Botanika" width="100" height="32">
+          <img class="footer__logo" src="./img/logowhite.svg" alt="Логотип кампании Botanika" width="100" height="32">
         </a>
         <nav class="footer__menu">
           <ul class="footer__list">
@@ -301,23 +301,23 @@
         </nav>
         <ul class="footer__socialist">
           <li class="footer__socialitem">
-            <a class="footer__socialink footer__socialist--inst" href="#">
+            <a class="footer__socialink footer__socialist--inst" href="#" aria-label="Перейти на страницу магазина в instagram">
               <svg width="20" height="20" viewbox="0 0 20 20">
-                <use xlink:href="sprite.svg#in_white"></use>
+                <use xlink:href="./img/sprite.svg#in_white"></use>
               </svg>
             </a>
           </li>
           <li class="footer__socialitem">
-            <a class="footer__socialink footer__socialist--fb" href="#">
+            <a class="footer__socialink footer__socialist--fb" href="#" aria-label="Перейти на страницу магазина в facebook">
               <svg width="12" height="20" viewbox="0 0 12 20">
-                <use xlink:href="sprite.svg#fb_white"></use>
+                <use xlink:href="./img/sprite.svg#fb_white"></use>
               </svg>
             </a>
           </li>
           <li class="footer__socialitem">
-            <a class="footer__socialink footer__socialist--tw" href="#">
+            <a class="footer__socialink footer__socialist--tw" href="#" aria-label="Перейти на страницу магазина в twitter">
               <svg width="26" height="20" viewbox="0 0 26 20">
-                <use xlink:href="sprite.svg#tw_white"></use>
+                <use xlink:href="./img/sprite.svg#tw_white"></use>
               </svg>
             </a>
           </li>

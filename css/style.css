@@ -560,6 +560,8 @@ a {
 .contacts {
   padding: 52px 0 72px 0;
   background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts__cotent {
@@ -659,7 +661,8 @@ a {
   background-color: #965e5a;
 }
 
-.btn:focus-visible {
+.btn:focus-visible,
+.btn:active {
   outline: none;
   border: 1px solid var(--hover);
 }
